@@ -1,12 +1,20 @@
 name: bios8366
+
+channels:
+ - conda-forge
+ - anaconda
+ 
 dependencies:
-- python=3.5
+- python=3.6
+- autograd
 - basemap
 - bokeh
 - cython
 - dask
 - ipython
 - jupyter
+- jupyterlab
+- keras
 - notebook
 - ipyparallel
 - ipywidgets
@@ -15,19 +23,21 @@ dependencies:
 - line_profiler
 - numexpr
 - numba
-- numpy>=1.11.0
-- pandas>=0.18.1
+- numpy
+- pandas
 - patsy
 - pillow
 - pip
 - pprofile
-- scikit-learn>=0.17.1
-- scipy>=0.17.1
-- seaborn>=0.7.0
+- python-graphviz
+- rpy2  
+- scikit-learn
+- scipy
+- seaborn
 - snakeviz
 - sympy
+- tensorflow
 - theano
+- xgboost
 - xlrd
-- pip:
-  - git+https://github.com/pymc-devs/pymc3.git#egg=pymc3
-  - GPy
+- pymc3
